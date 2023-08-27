@@ -22,7 +22,11 @@ describe('Team Builder App', () => {
       .should('have.value', '123456')
     
     cy.get('[type="checkbox"]').check()
+
+    cy.get('form').submit()
     
+    cy.get('input')
+      .should('have.value', '')
     
   })
 })
