@@ -25,6 +25,7 @@ export default function Form(props) {
             <form onSubmit={handleSubmit}>
                 <label>First Name:&nbsp; 
                     <input 
+                    className="fname"
                     value={fname}
                     type='text' 
                     name='fname' 
@@ -33,6 +34,7 @@ export default function Form(props) {
                 </label>
                 <label>Last Name:&nbsp; 
                     <input 
+                    className="lname"
                     value={lname}
                     type='text' 
                     name='lname' 
@@ -41,6 +43,7 @@ export default function Form(props) {
                 </label>
                 <label>email:&nbsp; 
                     <input 
+                    className="email"
                     value={email}
                     type='email' 
                     name='email'  
@@ -49,6 +52,7 @@ export default function Form(props) {
                 </label>
                 <label>Password:&nbsp; 
                     <input 
+                    className="pw"
                     value={password}
                     type='password' 
                     name='password' 
@@ -57,6 +61,7 @@ export default function Form(props) {
                 </label>
                 <label>Terms of Service:&nbsp; 
                     <input 
+                    className="tos"
                     type='checkbox' 
                     name='term' 
                     checked={term}
